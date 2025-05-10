@@ -1,0 +1,22 @@
+
+#include<stdio.h>
+#include<locale.h>
+
+int main (){
+    setlocale(LC_ALL, "Portuguese");
+    float VALOR;
+    float DESC;
+    float FINAL;
+
+    printf("Vosse comprou uma coisa e ganhou desconto de vimte por cento, vamos caocular os preços!\nQuanto foi a coisa?: ");
+    scanf("%f", &VALOR);
+
+    DESC = 0.2 * VALOR;
+    printf("\n\nAgora a gnt vai v qual é o valour que vc enocomizou taqui ó %f", DESC);
+
+    FINAL = 0.8 * VALOR;
+    printf("\n\no valor final do seu coisa é %f",FINAL);
+    printf("\nbouas compras viu, se precisar calcular desconto de 20porcemto especificamente, eu to aqi :) \n\n\n");
+
+  return 0;
+}

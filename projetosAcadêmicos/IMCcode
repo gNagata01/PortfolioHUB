@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+  int main (){
+  char NOME[100];
+  float MASSA;
+  float H;
+  float IMC;
+
+  printf("Seja bem-vindo à plataforma de cálculo de Índice de Massa Corporal! Vamos calcular seu IMC e te informarsobre quaisquer problemas de saúde relacionados à sua taxa! É rapidinho, só precisamos de algumas informações... ");
+
+  printf("\n\nVamos te conhecer! Qual é o seu nome? Digite aqui: ");
+  scanf("%s", NOME);
+
+  printf("\n\nInforme a sua massa em quilogramas (kg): ");
+  scanf("%f", MASSA);
+
+  printf("\n\nAgora, digite sua altura em metros (m): ");
+  scanf("%f", H);
+
+  IMC = MASSA / (H*H);
+  printf("\n\nMuito bem! Seu IMC é %f", IMC);
+
+  if (18.00<=IMC>=20.00){
+    printf("Você está na faixa de magreza (IMC entre 18.00 e 20.00). Consulte profissionais que te acompanham para saber o grau de perigo desta condição");
+  }
+
+
+
+
+
+  return 0;
+}
